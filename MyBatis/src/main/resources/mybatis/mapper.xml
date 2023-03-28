@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<!-- Query -->
+<mapper namespace="mybatis.mapper">
+
+<!-- 
+	<select id="외부에서 접근할 문자열"
+		pamameterType="object"  <- String, Object   들어가는 값(object)
+		resultType="object">
+		
+		쿼리문
+		select id, name, email
+		where id = #{값}		#{ 문자열(값) }  ${ 숫자 }	
+		
+	</select>	
+
+	<insert 				
+	<delete	
+	<update
+ -->
+ 
+<insert id="addmember" parameterType="dto.MemberDto">
+	insert into member(id, pwd, name, email, auth)
+	values(#{id}, #{pwd}, #{name}, #{email}, 3)
+</insert>
+
+<select id="getMember" parameterType="java.lang.String" 
+	resultType="dto.MemberDto">
+	select id, pwd, name, email, auth
+	from member
+	where id=#{id}
+</select>
+
+<select id="allMember" resultType="dto.MemberDto">
+	select * from member
+</select>
+
+<update id="updateMember" parameterType="dto.MemberDto">
+	update member
+	set name=#{name}, email=#{email}
+	where id=#{id}
+</update>
+
+<delete id="deleteMember" parameterType="String">
+	delete from member
+	where id=#{id}
+</delete>
+
+</mapper>
+
+
+
+
+
