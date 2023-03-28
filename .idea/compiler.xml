@@ -10,6 +10,7 @@
         <module name="spSample02" />
         <module name="spSample01" />
         <module name="spSample03" />
+        <module name="SpringTiles" />
         <module name="SpringSamples" />
         <module name="MyBatis" />
         <module name="member_framework" />
