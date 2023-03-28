@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/board_framework" />
+    <file type="web" url="file://$PROJECT_DIR$/member_framework" />
     <file type="web" url="file://$PROJECT_DIR$/MyBatis" />
     <file type="web" url="file://$PROJECT_DIR$/SpringSamples" />
     <file type="web" url="file://$PROJECT_DIR$/spSample01" />
@@ -16,6 +18,8 @@
         <option value="$PROJECT_DIR$/spSample03/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSamples/pom.xml" />
+        <option value="$PROJECT_DIR$/member_framework/pom.xml" />
+        <option value="$PROJECT_DIR$/board_framework/pom.xml" />
       </list>
     </option>
   </component>
